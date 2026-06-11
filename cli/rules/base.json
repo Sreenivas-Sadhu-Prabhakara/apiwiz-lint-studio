@@ -1,0 +1,8 @@
+{
+  "documentationUrl": "https://github.com/Sreenivas-Sadhu-Prabhakara/apiwiz-lint-studio",
+  "extends": [
+    ["spectral:oas", "recommended"],
+    ["spectral:asyncapi", "recommended"]
+  ],
+  "rules": {}
+}

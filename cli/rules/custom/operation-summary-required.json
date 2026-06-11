@@ -1,0 +1,10 @@
+{
+  "name": "operation-summary-required",
+  "templateId": "field-truthy",
+  "params": { "field": "summary" },
+  "description": "Every operation should have a non-empty summary.",
+  "message": "{{description}} (at {{path}})",
+  "given": "$.paths[*][get,put,post,delete,patch,options,head,trace]",
+  "severity": "warn",
+  "then": { "field": "summary", "function": "truthy" }
+}

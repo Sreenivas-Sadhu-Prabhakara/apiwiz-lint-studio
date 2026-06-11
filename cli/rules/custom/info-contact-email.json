@@ -1,0 +1,10 @@
+{
+  "name": "info-contact-email",
+  "templateId": "field-truthy",
+  "params": { "field": "email" },
+  "description": "API info.contact should include an email address.",
+  "message": "{{description}} (at {{path}})",
+  "given": "$.info.contact",
+  "severity": "warn",
+  "then": { "field": "email", "function": "truthy" }
+}

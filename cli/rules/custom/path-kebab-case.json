@@ -1,0 +1,10 @@
+{
+  "name": "path-kebab-case",
+  "templateId": "field-pattern",
+  "params": { "match": "^(/[a-z0-9-{}]+)+$" },
+  "description": "Path segments must be kebab-case (lowercase, dash-separated).",
+  "message": "{{description}} (at {{path}})",
+  "given": "$.paths[*]~",
+  "severity": "error",
+  "then": { "function": "pattern", "functionOptions": { "match": "^(/[a-z0-9-{}]+)+$" } }
+}

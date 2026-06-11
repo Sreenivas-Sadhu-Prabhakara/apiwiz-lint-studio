@@ -1,0 +1,35 @@
+{
+  "name": "apiwiz-lint",
+  "version": "1.0.0",
+  "description": "Spectral-based linter for OpenAPI & AsyncAPI specs with organization-specific governance rules bundled in. Rules are authored via Apiwiz Lint Studio and ship inside this CLI.",
+  "bin": {
+    "apiwiz-lint": "./bin.js"
+  },
+  "files": [
+    "bin.js",
+    "lib/",
+    "rules/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "list": "node bin.js --list",
+    "pack:dist": "npm pack"
+  },
+  "keywords": [
+    "spectral",
+    "lint",
+    "apiwiz",
+    "openapi",
+    "asyncapi",
+    "api-governance"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@stoplight/spectral-cli": "^6.14.2",
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">= 18"
+  }
+}
